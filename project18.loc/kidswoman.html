@@ -1,0 +1,111 @@
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Главная страница</title>
+
+<!--Bootstrap reboot (для сброса стилей)-->
+<link rel="stylesheet" href="nextpage.css">
+
+<!--Bootstrap сетка-->
+<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+
+<!--Шрифты с Google Fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="css/styles.css">
+
+<!--Подключаем корзину-->
+<link rel="stylesheet" href="/smartbasket/css/smartbasket.min.css">
+</head>
+<body>
+
+<div class="navbar">
+<div class="container">
+<a href="#" class="navbar-brand">A&3&BUT</a>
+<div class="navbar-wrap">
+  <!--<div><input type="text" placeholder="Поиск" name="search" id="search"></div>-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <form action="">
+    <input type="search">
+    <i class="fa fa-search"></i>
+  </form>
+  <nav>
+
+
+    <ul class="navbar-menu">
+      <li ><a type="button" href ="nextpage.html" data-f="all" class="filter-btn">Каталог &bigtriangledown; </a><!--Фильтр 1 -->
+        <ul>
+          <li ><a href = "man.html" type="button" data-f="man" class="filter-btn">Мужчинам &bigtriangledown;</a><!--Фильтр 2 -->
+            <ul class="man">
+              <li><a href = "clothesman.html" type="button" data-f="clothesman" class="filter-btn">Одежда</a></li><!--Фильтр 2.1 -->
+              <li><a href = "crossman.html" type="button" data-f="crossman" class="filter-btn">Обувь</a></li><!--Фильтр 2.2 -->
+              <li><a href = "acsesuarman.html" type="button"  data-f="acsesuarman" class="filter-btn">Аксессуары</a></li><!--Фильтр 2.3 -->
+            </ul>
+          </li>
+          <li><a href = "woman.html" type="button"  data-f="woman" class="filter-btn">Женщинам &bigtriangledown;</a><!--Фильтр 3 -->
+          <ul class="woman">
+            <li ><a href = "clotheswoman.html" type="button" data-f="clotheswoman" class="filter-btn">Одежда</a></li><!--Фильтр 3.1 -->
+            <li ><a href = "crosswoman.html" type="button" data-f="crosswoman" class="filter-btn">Обувь</a></li><!--Фильтр 3.2 -->
+            <li><a href = "acsesuarwoman.html" type="button" data-f="acsesuarwoman" class="filter-btn">Аксессуары</a></li><!--Фильтр 3.3 -->
+          </ul>
+          </li>
+          <li><a href = "kids.html" type="button" data-f="kids" class="filter-btn">Детям &bigtriangledown;</a><!--Фильтр 4 -->
+             <ul>
+                 <li><a href = "kidsman.html" type="button"  data-f="kidsman" class="filter-btn">Мальчикам</a></li><!--Фильтр 4.1 -->
+                   <li><a href = "#" type="button" data-f="kidswoman" class="filter-btn">Девочкам</a></li><!--Фильтр 4.2 -->
+             </ul>
+          </li>
+        </ul>
+<li><a class="btn btn-default btn-lg" href="cart.php">
+  Корзина
+  <span class="badge basker_kol">0</span>
+</a></li>
+<li> <a href="favorites.php" name="button" >Избранное</a></li>
+
+
+
+</ul>
+</nav>
+<a href="account.html" class = "callback">Личный кабинет</a>
+</div>
+</div>
+</div>
+<!--СОДЕРЖИМОЕ САЙТА-->
+<div class="cont mt-5">
+  <div class="row">
+
+  </div>
+</div>
+
+
+
+<script scr="nextpage.js"></script>
+<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js "></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>       
+<script>
+  $('.add-to-cart').click(function () {//клип на кнопку
+      var id = $(this).attr('id'); //получаем id этой кнопки
+          $.ajax({//передаем ajax-запросом данные
+          type: "POST", //метод передачи данных
+          url: '/addtocart.php',//php-файл для обработки данных
+          data: {id_tov: id},//передаем наши данные
+          success: function(data) {//
+              $('.basker_kol').html(data);//меняем количество товаров на кнопке корзины 
+              }
+          });
+  });
+  $('.add_to_like').click(function () {//клип на кнопку
+    var id = $(this).attr('id'); //получаем id этой кнопки
+        $.ajax({//передаем ajax-запросом данные
+        type: "POST", //метод передачи данных
+        url: '/addtofavorites.php',//php-файл для обработки данных
+        data: {id_tov: id},//передаем наши данные
+        success: function(data) {//
+         
+            }
+        });
+});
+</script>
+</body>
+</html>

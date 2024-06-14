@@ -1,0 +1,41 @@
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="nextpage.css">
+  </head>
+  <body>
+    <button type="button" name="button" class="add-to-cart"><ion-icon name="cart-outline" data-easy-toggle="#modalWin" data-easy-class="show" data-easy-rcoe></ion-icon>
+      <!-Настройка кнопок->
+      <div id="modalWin" class="modal">
+         <div class="modal-window">
+           <h4>Корзина</h4>
+           <button data-easy-toggle="#modalWin" data-easy-class="show" data-easy-rcoe class= "btn-close">X</button>
+         </div>
+         <div class="overlay" data-easy-toggle="#modalWin" data-easy-class="show" data-easy-rcoe></div>
+      </div>
+      <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+      <script >
+
+
+      /*!
+      * EasyToggler v2.2.7 (https://github.com/rah-emil/easy-toggler#readme)
+      * Copyright 2022 Rah Emil <013131@mail.ru>
+      * Licensed under MIT (https://github.com/rah-emil/easy-toggler/blob/master/LICENSE)
+      */
+      (function(){'use strict';document.addEventListener('click', EasyTogglerHandler);function EasyTogglerHandler(event){
+      const EY_BTN = event.target.closest('[data-easy-toggle]');if(EY_BTN){event.preventDefault();Let ey_target=EY_BTN.getAttribute('data-easy-toggle');
+      let ey_class=EY_BTN.getAttribute('data-easy-class');try{document.querySelector(ey_target).classList.toggle(ey_class)}catch(ey_error)
+      {consoLe.warn('EasyToggler.js : Блок '+ey_target+' несуществует')}}if(!EY_BTN){let ey_rcoe_block_targets=document.querySelectorAll('[data-easy-rcoe]');
+      Array.from( ey_rcoe_block_targets).forEach.call(ey_rcoe_block_targets,function(ey_rcoe_block_target){
+      let ey_rcoe_block = ey_rcoe_block_target.getAttribute('data-easy-toggle'),ey_rcoe_block_class=ey_rcoe_block_target.getAttribute(' data-easy-class');
+      if(!event.target.closest(ey_rcoe_block)){try{document.querySelector(ey_rcoe_block).classList.remove(ey_rcoe_block_class)}
+      catch(ey_error){consoLe.warn('EasyToggler.js : Блок '+ey_target+' несуществует')}}})}}})()
+      </script>
+  </body>
+</html>

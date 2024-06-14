@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="basket.css">
+  </head>
+  <body>
+    <div class="navbar">
+        <div class="container">
+            <a href="nextpage.html" class="navbar-brand">A&3&BUT</a>
+                 <div class="navbar-wrap">
+    
+                     <ul class="navbar-menu">
+                        <li><a href ="nextpage.html">Каталог</a></li>
+                        <li><a href ="#">Корзина</a></li>
+                        <li><a href ="#">Избранное</a></li>
+                        <li><a href ="#">Контакты</a></li>
+                     </ul>
+                     <a href="account.html" class = "callback">Личный кабинет</a>
+                 </div>
+      </div>
+    </div>
+    <div class="cart">
+    <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+          Shopping Bag
+        </div>
+   
+        <!-- Товар #1 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"><img src="like_favorite_heart_5759.png" alt=""></span>
+          </div>
+   
+          <div class="image">
+            <img src="" alt="" />
+          </div>
+          
+          <div class="description">
+            <span>Кроссовки New Balance 574</span>
+          </div>
+   
+          <div class="quantity">
+            <button class="plus-btn" onclick="addCount()" type="button" name="button">
+              +
+            </button>
+            <input type="text" id ="test" name="name" value="1">
+            <button class="minus-btn" onclick="minusCount()" type= "button" name="button">
+              -
+            </button>
+          </div>
+   
+          <div class="total-price">$<label id="priceord" onclick="fffCount()" value1="200">200</label></div>
+        </div>
+   
+      </div>
+    </div>
+    <div id="buy"><button type="submit" id="buttonbuy">Купить</button></div>
+
+    <script src="basket.js"></script>
+  </body>
+</html>

@@ -1,0 +1,420 @@
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Главная страница</title>
+
+<!--Bootstrap reboot (для сброса стилей)-->
+<link rel="stylesheet" href="nextpage.css">
+
+<!--Bootstrap сетка-->
+<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+
+<!--Шрифты с Google Fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="css/styles.css">
+
+<!--Подключаем корзину-->
+<link rel="stylesheet" href="/smartbasket/css/smartbasket.min.css">
+</head>
+<body>
+
+<div class="navbar">
+<div class="container">
+<a href="#" class="navbar-brand">A&3&BUT</a>
+<div class="navbar-wrap">
+  <!--<div><input type="text" placeholder="Поиск" name="search" id="search"></div>-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <form action="">
+    <input type="search">
+    <i class="fa fa-search"></i>
+  </form>
+  <nav>
+
+
+    <ul class="navbar-menu">
+      <li ><a type="button" href ="nextpage.html" data-f="all" class="filter-btn">Каталог &bigtriangledown; </a><!--Фильтр 1 -->
+        <ul>
+          <li ><a href = "#" type="button" data-f="man" class="filter-btn">Мужчинам &bigtriangledown;</a><!--Фильтр 2 -->
+            <ul class="man">
+              <li><a href = "clothesman.html" type="button" data-f="clothesman" class="filter-btn">Одежда</a></li><!--Фильтр 2.1 -->
+              <li><a href = "crossman.html" type="button" data-f="crossman" class="filter-btn">Обувь</a></li><!--Фильтр 2.2 -->
+              <li><a href = "acsesuarman.html" type="button"  data-f="acsesuarman" class="filter-btn">Аксессуары</a></li><!--Фильтр 2.3 -->
+            </ul>
+          </li>
+          <li><a href = "woman.html" type="button"  data-f="woman" class="filter-btn">Женщинам &bigtriangledown;</a><!--Фильтр 3 -->
+          <ul class="woman">
+            <li ><a href = "clotheswoman.html" type="button" data-f="clotheswoman" class="filter-btn">Одежда</a></li><!--Фильтр 3.1 -->
+            <li ><a href = "crosswoman.html" type="button" data-f="crosswoman" class="filter-btn">Обувь</a></li><!--Фильтр 3.2 -->
+            <li><a href = "acsesuarwoman.html" type="button" data-f="acsesuarwoman" class="filter-btn">Аксессуары</a></li><!--Фильтр 3.3 -->
+          </ul>
+          </li>
+          <li><a href = "kids.html" type="button" data-f="kids" class="filter-btn">Детям &bigtriangledown;</a><!--Фильтр 4 -->
+             <ul>
+                 <li><a href = "kidsman.html" type="button"  data-f="kidsman" class="filter-btn">Мальчикам</a></li><!--Фильтр 4.1 -->
+                   <li><a href = "kidswoman.html" type="button" data-f="kidswoman" class="filter-btn">Девочкам</a></li><!--Фильтр 4.2 -->
+             </ul>
+          </li>
+        </ul>
+<li><a class="btn btn-default btn-lg" href="cart.php">
+  Корзина
+  <span class="badge basker_kol">0</span>
+</a></li>
+<li> <a href="favorites.php" name="button" >Избранное</a></li>
+
+
+
+</ul>
+</nav>
+<a href="account.html" class = "callback">Личный кабинет</a>
+</div>
+</div>
+</div>
+<!--СОДЕРЖИМОЕ САЙТА-->
+<div class="cont mt-5">
+  <div class="row">
+    <div class="col-md-4 " id="">
+      <div class="product crossman man">
+        <div class="image">
+          <img src="https://cdn.sportmaster.ru/upload/resize_cache/iblock/3d2/800_800_1/58572390299.jpg" alt="" id="xxx">
+        </div>
+        <div class="info">
+          <h3 id="101">Кроссовки FILA Trace Low</h3>
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star-half-outline"></ion-icon></li>
+          </ul>
+          <div class="info-price">
+            <span class="price">50 <small>$</small></span>
+            <a type="button" href="#" class="add_to_like" data-id="111205" id="1"><ion-icon name="heart-outline"></ion-icon></a>
+            <button type="button" name="button" class="add-to-cart" data-id="111205" id="1" ><ion-icon name="cart-outline"></ion-icon></button> <!--кнопка корзины-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 " id="" >
+      <div class="product acsesuarman man">
+        <div class="image">
+          <img src="https://cdn.sportmaster.ru/upload/resize_cache/iblock/7e3/800_800_1/73111510299.jpg" alt="" id="xxx">
+        </div>
+        <div class="info">
+          <h3 id="102"> Панама Vans Level Up</h3>
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+          </ul>
+          <div class="info-price">
+            <span class="price">15 <small>$</small></span>
+            <a type="button" href="#" class="add_to_like" data-id="111206" id="2"><ion-icon name="heart-outline"></ion-icon></a>
+            <button type="button" name="button" class="add-to-cart" data-id="111206" id="2"><ion-icon name="cart-outline"></ion-icon></button> <!--кнопка корзины-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 " id="">
+      <div class="product clothesman man">
+        <div class="image">
+          <img src="https://cdn.sportmaster.ru/upload/resize_cache/iblock/5be/800_800_1/74398680299.jpg" alt="" id="xxx">
+        </div>
+        <div class="info">
+          <h3 id="104">Футболка Nike</h3>
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+          </ul>
+          <div class="info-price">
+            <span class="price">50 <small>$</small></span>
+            <a type="button" href="#" class="add_to_like" data-id="111208" id="4"><ion-icon name="heart-outline"></ion-icon></a>
+            <button type="button" name="button" class="add-to-cart" data-id="111208" id="4"><ion-icon name="cart-outline" ></ion-icon></button> <!--кнопка корзины-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 " id="">
+      <div class="product crossman man">
+        <div class="image">
+          <img src="https://cdn.sportmaster.ru/upload/resize_cache/iblock/b89/800_800_1/75152720299.jpg" alt="" id="xxx">
+        </div>
+        <div class="info">
+          <h3 id="105">Кеды Vans</h3>
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star-half-outline"></ion-icon></li>
+          </ul>
+          <div class="info-price">
+            <span class="price">100 <small>$</small></span>
+            <a type="button" href="#" class="add_to_like" data-id="111209" id="5"><ion-icon name="heart-outline"></ion-icon></a>
+            <button type="button" name="button" class="add-to-cart"  data-id="111209" id="5"><ion-icon name="cart-outline"></ion-icon></button> <!--кнопка корзины-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" id="">
+      <div class="product  clothesman man">
+        <div class="image">
+          <img src="https://cdn.sportmaster.ru/upload/resize_cache/iblock/5ec/800_800_1/51069650299.jpg" alt="" id="xxx">
+        </div>
+        <div class="info">
+          <h3 id="106">Брюки Adidas</h3>
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+          </ul>
+          <div class="info-price">
+            <span class="price">50 <small>$</small></span>
+            <a type="button" href="#" class="add_to_like"  data-id="111210" id="6"><ion-icon name="heart-outline"></ion-icon></a>
+            <button type="button" name="button" class="add-to-cart"  data-id="111210" id="6" ><ion-icon name="cart-outline"></ion-icon></button> <!--кнопка корзины-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" id="">
+      <div class="product  crossman man">
+        <div class="image">
+          <img src="https://cdn.sportmaster.ru/upload/resize_cache/iblock/800/800_800_1/74397220299.jpg" alt="" id="xxx">
+        </div>
+        <div class="info">
+          <h3 id="107">Кроссовки New Balance 574</h3>
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+          </ul>
+          <div class="info-price">
+            <span class="price">200 <small>$</small></span>
+            <a type="button" href="#" class="add_to_like"  data-id="111211" id="7"><ion-icon name="heart-outline"></ion-icon></a>
+            <button type="button" name="button" class="add-to-cart"  data-id="111211" id="7"><ion-icon name="cart-outline"></ion-icon></button> <!--кнопка корзины-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 " id="">
+      <div class="product clothesman man">
+        <div class="image">
+          <img src="https://cdn.sportmaster.ru/upload/resize_cache/iblock/daa/800_800_1/52181690299.jpg" alt="" id="xxx">
+        </div>
+        <div class="info">
+          <h3 id="108">Куртка The North Face</h3>
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+          </ul>
+          <div class="info-price">
+            <span class="price">150 <small>$</small></span>
+            <a type="button" href="#" class="add_to_like"  data-id="111212" id="8"><ion-icon name="heart-outline"></ion-icon></a>
+            <button type="button" name="button" class="add-to-cart"  data-id="111212" id="8"><ion-icon name="cart-outline"></ion-icon></button> <!--кнопка корзины-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 " id="">
+      <div class="product crossman man">
+        <div class="image">
+          <img src="https://cdn.sportmaster.ru/upload/resize_cache/iblock/94a/800_800_1/73563260299.jpg" alt="" id="xxx">
+        </div>
+        <div class="info">
+          <h3 id="109">Кеды Nike Court Vision Lo</h3>
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star-half-outline"></ion-icon></li>
+          </ul>
+          <div class="info-price">
+            <span class="price">50 <small>$</small></span>
+            <a type="button" href="#" class="add_to_like"  data-id="111213" id="9"><ion-icon name="heart-outline"></ion-icon></a>
+            <button type="button" name="button" class="add-to-cart" data-id="111213" id="9"><ion-icon name="cart-outline"></ion-icon></button> <!--кнопка корзины-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" id="">
+      <div class="product  clothesman man">
+        <div class="image">
+          <img src="https://cdn.sportmaster.ru/upload/resize_cache/iblock/1e7/800_800_1/75936620299.jpg" alt="" id="xxx">
+        </div>
+        <div class="info">
+          <h3 id="110">Жилет утепленный adidas</h3>
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+          </ul>
+          <div class="info-price">
+            <span class="price">100 <small>$</small></span>
+            <a type="button" href="#" class="add_to_like" data-id="111214" id="10"><ion-icon name="heart-outline" ></ion-icon></a>
+            <button type="button" name="button" class="add-to-cart" data-id="111214" id="10"><ion-icon name="cart-outline"></ion-icon></button> <!--кнопка корзины-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" id="">
+      <div class="product  clothesman man">
+        <div class="image">
+          <img src="https://cdn.sportmaster.ru/upload/resize_cache/iblock/5d8/800_800_1/64412170299.jpg" alt="" id="xxx">
+        </div>
+        <div class="info">
+          <h3 id="111">Брюки Colambia</h3>
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star-half-outline"></ion-icon></li>
+          </ul>
+          <div class="info-price">
+            <span class="price">50 <small>$</small></span>
+            <a type="button" href="#" class="add_to_like" data-id="111215" id="11"><ion-icon name="heart-outline" ></ion-icon></a>
+            <button type="button" name="button" class="add-to-cart" data-id="111215" id="11" ><ion-icon name="cart-outline"></ion-icon></button><!--кнопка корзины-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" id="">
+      <div class="product  clothesman man">
+        <div class="image">
+          <img src="https://cdn.sportmaster.ru/upload/resize_cache/iblock/847/800_800_1/72821840299.jpg" alt="" id="xxx">
+        </div>
+        <div class="info">
+          <h3 id="113"> Куртка Kappa</h3>
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+          </ul>
+          <div class="info-price">
+            <span class="price">85 <small>$</small></span>
+            <a type="button" href="#" class="add_to_like" data-id="111217" id="13"><ion-icon name="heart-outline" ></ion-icon></a>
+            <button type="button" name="button" class="add-to-cart" data-id="111217" id="13"><ion-icon name="cart-outline"></ion-icon></button> <!--кнопка корзины-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" id="">
+      <div class="product  acsesuarman man">
+        <div class="image">
+          <img src="https://cdn.sportmaster.ru/upload/resize_cache/iblock/708/800_800_1/66364400299.jpg" alt="" id="xxx">
+        </div>
+        <div class="info">
+          <h3 id="115">Шапка Columbia Lost Lager</h3>
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+          </ul>
+          <div class="info-price">
+            <span class="price">15 <small>$</small></span>
+            <a type="button" href="#" class="add_to_like" data-id="111219" id="15"><ion-icon name="heart-outline" ></ion-icon></a>
+            <button type="button" name="button" class="add-to-cart" data-id="111219" id="15" ><ion-icon name="cart-outline"></ion-icon></button> <!--кнопка корзины-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" id="">
+      <div class="product  clothesman man">
+        <div class="image">
+          <img src="https://vipavenue.ru/upload/catalog_photos/dbc/dbc221288a451786b76ee76e9da844e9.jpg" alt="" id="xxx">
+        </div>
+        <div class="info">
+          <h3 id="117">Пуховик стеганный GUCCI</h3>
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+          </ul>
+          <div class="info-price">
+            
+            <span class="price">3000 <small>$</small></span>
+            <a type="button" href="#" class="add_to_like"  data-id="111221" id="17"><ion-icon name="heart-outline"></ion-icon></a>
+            <button type="button" name="button" class="add-to-cart" data-id="111221" id="17"><ion-icon name="cart-outline" ></ion-icon></button> <!--кнопка корзины-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" id="">
+      <div class="product  crossman man">
+        <div class="image">
+          <img src="https://vipavenue.ru/upload/resize_cache/catalog_photos/d09/252_336_140cd750bba9870f18aada2478b24840a/d09243298bc7e9ab431071f7d26e414a.jpg" alt="" id="xxx">
+        </div>
+        <div class="info">
+          <h3 id="118"> Лоферы из КРОКОДИЛА ZILLI</h3>
+          <ul class="rating">
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+            <li><ion-icon name="star"></ion-icon></li>
+          </ul>
+          <div class="info-price">
+            <span class="price">10000 <small>$</small></span>
+            <a type="button" href="#" class="add_to_like" data-id="111222" id="18" ><ion-icon name="heart-outline" ></ion-icon></a>
+            <button type="button" name="button" class="add-to-cart" data-id="111222" id="18" ><ion-icon name="cart-outline"></ion-icon></button> <!--кнопка корзины-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+<script scr="nextpage.js"></script>
+<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js "></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>       
+<script>
+  $('.add-to-cart').click(function () {//клип на кнопку
+      var id = $(this).attr('id'); //получаем id этой кнопки
+          $.ajax({//передаем ajax-запросом данные
+          type: "POST", //метод передачи данных
+          url: '/addtocart.php',//php-файл для обработки данных
+          data: {id_tov: id},//передаем наши данные
+          success: function(data) {//
+              $('.basker_kol').html(data);//меняем количество товаров на кнопке корзины 
+              }
+          });
+  });
+  $('.add_to_like').click(function () {//клип на кнопку
+    var id = $(this).attr('id'); //получаем id этой кнопки
+        $.ajax({//передаем ajax-запросом данные
+        type: "POST", //метод передачи данных
+        url: '/addtofavorites.php',//php-файл для обработки данных
+        data: {id_tov: id},//передаем наши данные
+        success: function(data) {//
+         
+            }
+        });
+});
+</script>
+</body>
+</html>

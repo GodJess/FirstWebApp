@@ -1,0 +1,38 @@
+#entem{
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 200;
+}
+#oldpass{
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#text{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+}
+.buttonsend{
+    border-radius: 4px;
+    position: relative;
+    
+    left: 15px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.buttonsend:hover{
+    background-color: rgb(100, 12, 12);
+    color: white;
+    padding: 10px;
+   
+    font-weight: 300;
+}
+.block{
+    margin-top:30px ;
+}

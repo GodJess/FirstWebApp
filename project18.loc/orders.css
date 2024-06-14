@@ -1,0 +1,21 @@
+.table{
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 14px ;
+    font-family: 'Roboto', sans-serif;
+   }
+   table tr td{
+    background-color: #f6f3f3;
+    color: #000;
+    padding: 25px;
+  }
+   table tr th{
+    
+    background-color: #000;
+    color:#fff;
+    padding: 25px;
+  }

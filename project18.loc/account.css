@@ -1,0 +1,196 @@
+body {
+  position: relative;
+  font-family: Impact, cursive;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #16376f;
+  min-width: 320px;
+  overflow-x: hidden;
+  height: auto;
+  
+  }
+  .navbar{
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+  background-color: #fff;
+  }
+  .navbar .container{
+  height: inherit;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .navbar-menu{
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  
+  }
+  
+  .navbar-menu li {
+  display: inline-block;
+  }
+  .navbar-menu li a{
+  display: inline-block;
+  color: black;
+  opacity: 0.6;
+  text-decoration: none;
+  padding: 10px;
+  transition: all .07s ease-in-out;
+  }
+  .navbar-menu li a:hover{
+  opacity: 1;
+  }
+  .navbar-wrap{
+  display: flex;
+  flex-flow: nowrap;
+  }
+  .callback{
+  margin-left: 30px;
+  padding: 10px 30px;
+  background-color: #140764;
+  border-radius: 100px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 4px 5px rgba(20, 7, 100, 0.94);
+  }
+  .callback:hover{
+  transform: scale(1.04);
+  transition: all .1s ease-in-out;
+  color: #fff;
+  box-shadow: 0 9px 9px rgba(20, 7, 100, 1);
+  }
+  .navbar-brand{
+  font-size: 36px;
+  text-decoration: none;
+  color: #000;
+  }
+  .navbar-brand:hover{
+  color: #140764;
+  transition: all .07s ease-in-out;
+  }
+  h1{
+    font-family: Impact,cursive;
+    font-weight: normal;
+    text-align: center;
+    font-size: 45px;
+  }
+  
+  .account{
+    display: block;
+  }
+  .option{
+    width: 250px;
+    margin: 25px;
+    padding: 5px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 170px;
+    box-shadow: 0 3px  6px rgba(218, 218, 218, 1);
+  }
+  .option:hover{
+    transform: scale(1.04);
+  transition: all .1s ease-in-out;
+  color: #fff;
+  box-shadow: 0 9px 9px rgba(20, 7, 100, 1);
+  }
+  #orders{
+    color: white;
+    text-decoration: none;
+    font-family: Impact,cursive;
+  }
+  #returns{
+    color: white;
+    text-decoration: none;
+    font-family: Impact,cursive;
+  }
+  #data{
+    color: white;
+    text-decoration: none;
+    font-family: Impact,cursive;
+  }
+  #Settings{
+    color: white;
+    text-decoration: none;
+    font-family: Impact,cursive;
+  }
+  #SignOut{
+    color: white;
+    text-decoration: none;
+    font-family: Impact,cursive;
+  }
+  #Sign{
+    color: white;
+    text-decoration: none;
+    font-family: Impact,cursive;
+  }
+  #search{
+    height: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 100;
+    transform: translate(-60px,10px);
+  }
+  #search:hover{
+    transition: none 0.5s ;
+  }
+
+  table{
+    padding-left: 100px;
+    padding-top: 40px;
+    padding-right: 60px;
+    padding-bottom: 40px;
+    position: relative;
+    justify-content: center;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    font-size: 14px ;
+    font-family: 'Roboto', sans-serif;
+    
+   }
+   .image{
+    margin-top: 32px;
+    width: 110px;
+    height: 115px;
+    border: 2px solid #000;
+   }
+   .image:hover{
+    background-color: rgb(255, 240, 215);
+    margin-top: 32px;
+    width: 110px;
+    height: 115px;
+    border: 2px solid #000;
+    cursor: pointer;
+   }
+   
+   table tr td{
+     padding: 30px 30px;
+     
+   }
+   table tr td:hover{
+    padding: 30px 30px;
+    background-color: rgb(253, 245, 245);
+    cursor: pointer;
+  }
+   label{
+    position: absolute;
+    width: 112px;
+    height: 40px;
+    margin-bottom: 10px;
+   }
+
+   .label{
+    width: 112px ;
+    height: 30px ;
+    border: 1px solid #000 ;
+    background-color: #16376f;
+    color : #fff;
+    text-align: center;
+    font-size: 14px ;
+    font-family: 'Roboto', sans-serif;
+   }
